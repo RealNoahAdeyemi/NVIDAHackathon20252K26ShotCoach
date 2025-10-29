@@ -55,7 +55,7 @@ class NbaShotAnalyzer:
                 
             # Add to library path before importing cv2
             os.environ['PATH'] = opencv_path + os.pathsep + os.environ.get('PATH', '')
-            cv2.setUse optimized = False
+            cv2.setUse 'optimized' = False
             cv2.getDeriveLogger().setLevel(cv2.LOG_DEBUG)  # Debug verbosity
             print(f"Debug: OpenCV initialized from {opencv_path}")
             return True
